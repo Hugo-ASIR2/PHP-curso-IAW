@@ -1,25 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data</title>
+</head>
 <body>
-
- 
-
-<h2>Data</h2>
-
- 
-
 <?php
-    if(isset($_POST['role'])) {
-        if($_POST['role'] == 'Administrador') {
-            echo "<p>Autorización para modificar datos</p>";
-            echo '<a href="data.php">Data</a>';
-        } elseif($_POST['role'] == 'Usuario') {
-            echo "<p>Solo visualización de datos</p>";
-        }
+    $rol = 'Administrador';
+    if ($rol == 'Administrador'){
+        echo '<h3 style="color:green">Puede modificar datos</h3>';
+        echo '<br>';
+        echo '<a href="data.php">DATOS</a>';
+    }
+    else{
+        echo '<h3 style="color:red">Solo puede visualizar los datos</h3>';
+        echo '<a href="data.php">DATOS</a>';
     }
 ?>
-
- 
-
 </body>
 </html>
