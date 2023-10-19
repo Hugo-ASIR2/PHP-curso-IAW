@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Hugo" content="Nombre del autor" />
     <title>Data</title>
-    
+
 </head>
 
 
@@ -31,6 +31,7 @@
 ?>
 
 </body>
+
 
 
 </html>
