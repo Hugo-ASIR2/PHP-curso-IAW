@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Inicio</title>
-</head>
 <body>
-<?php
-$password = "contrasena_correcta";
 
-if (isset($_POST['password'])) {
-    if ($_POST['password'] == $password) {
-        echo "<p>Acceso autorizado.</p>";
-        echo "<a href='resultado-login.php'>Ir a resultado-login</a>";
+ 
+
+<h2>Inicio</h2>
+
+ 
+
+<?php
+    $password = ""; // Define your password here
+
+ 
+
+    if(isset($_POST['password']) && $_POST['password'] == $password) {
+        echo '<a href="resultado-login.php">Resultado Login</a>';
     } else {
-        echo "<p>Acceso denegado.</p>";
+        echo "Acceso denegado";
     }
-}
 ?>
 
-<form method="POST" action="inicio.php">
-    <label for="password">Contraseña:</label>
-    <input type="password" name="password" id="password">
-    <input type="submit" value="Iniciar sesión">
+ 
+
+<form method="post" action="">
+<input type="password" name="password">
+<input type="submit" value="Submit">
 </form>
+
+ 
+
 </body>
 </html>
