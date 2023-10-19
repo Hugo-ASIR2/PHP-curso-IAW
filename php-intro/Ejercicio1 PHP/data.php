@@ -15,7 +15,7 @@
     $rol = 'Administrador';
     if ($rol == 'Administrador'){
 
-        echo '<h3 style="color:green">Puede modificar datos</h3>';
+        echo '<h3 style="color:green">Puedes modificar datos</h3>';
 
         echo '<br>';
 
@@ -25,7 +25,7 @@
 
 
     else{
-        echo '<h3 style="color:red">Solo puede visualizar los datos</h3>';
+        echo '<h3 style="color:red">Unicamente puedes visualizar los datos</h3>';
         echo '<a href="data.php">DATOS</a>';
     }
 ?>
